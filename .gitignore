@@ -8,6 +8,7 @@ node_modules/
 dist/
 *.js.map
 *.tsbuildinfo
+temp_auto_push.bat
 
 # OS
 .DS_Store
@@ -19,3 +20,5 @@ db/explain/plans/
 
 # Trustlines audit: cached Horizon operations, re-fetched by `npm run audit:trustlines -- fetch`.
 db/audit/.cache/
+.gitignore
+branch_structure.json
