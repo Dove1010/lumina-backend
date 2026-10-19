@@ -60,6 +60,7 @@ The following migrations are strictly **irreversible** in place and will be reje
 | `010_trustlines` | `010_trustlines.down.sql` | Drops `trustlines` table. |
 | `011_assets` | `011_assets.down.sql` | Drops `assets` table. |
 | `012_asset_volume_buckets` | `012_asset_volume_buckets.down.sql` | Drops `asset_volume_buckets` table and `bucket_hour()` function. |
+| `015_drop_unused_trustline_indexes` | `015_drop_unused_trustline_indexes.down.sql` | Recreates the four `trustlines` secondary indexes. Plain `CREATE INDEX`: blocks writes to `trustlines` while it builds. |
 
 ---
 

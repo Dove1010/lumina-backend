@@ -108,6 +108,7 @@ pruning code:
 | `api_keys`, `exports`        | **no**   | Configuration and operator state.                           |
 | `account_refresh_queue`      | **no**   | A work queue that drains itself. A retention window would only delete pending work. |
 | `retry_queue`                | **no**   | Same.                                                         |
+| `trustlines`                 | **no**   | Current state: one row per live (account, asset) pair, deleted when the trustline is removed. A time window would delete live trustlines. See [TRUSTLINES_INDEX_REVIEW.md](TRUSTLINES_INDEX_REVIEW.md#growth). |
 
 If a table is not in the list, no configuration will make it disappear.
 
